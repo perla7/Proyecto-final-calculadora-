@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculadora</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+	<body>
+		<div class="contenedor-pricipal">
+        	<h1>Calculadora</h1>
+            <div class="calculadora">
+            	<div class="pantalla" id="pantalla">
+                    <div class="pantalla-izq" id='pantalla-izq'>
+                    	<div class="signo" id="signo"></div>
+                        <div class="memoria" id="memoria"></div>
+                    </div>
+                    <div class="pantalla-der">	
+                        <div class="operaciones" id="operaciones"></div>
+                    	<div class="entrada" id="entrada">0</div>
+                	</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="contenedor-tabla">	
+                    <table class="teclas">
+                    	<tr>
+                        	<td><button value="mc" class="boton">MC</button></td>
+                            <td><button value="mr" class="boton">MR</button></td>
+                            <td><button value="ms" class="boton">MS</button></td>
+                            <td><button value="m+" class="boton">M+</button></td>
+                            <td><button value="m-" class="boton">M-</button></td>
+                        </tr>
+                        <tr>
+                        	<td><button value="borrar" class="boton">◄</button></td>
+                            <td><button value="ce" class="boton boton-borrar">CE</button></td>
+                            <td><button value="c" class="boton boton-borrar">C</button></td>
+                            <td><button value="+-" class="boton" id="+-">±</button></td>
+                            <td><button value="raiz" class="boton">√</button></td>
+                        </tr>
+                        <tr>	
+                        	<td><button value="7" class="boton">7</button></td>
+                            <td><button value="8" class="boton">8</button></td>
+                            <td><button value="9" class="boton">9</button></td>
+                            <td><button value="/" class="boton">/</button></td>
+                            <td><button value="%" class="boton">%</button></td>
+                        </tr>
+                        <tr>
+                        	<td><button value="4" class="boton">4</button></td>
+                            <td><button value="5" class="boton">5</button></td>
+                            <td><button value="6" class="boton">6</button></td>
+                            <td><button value="*" class="boton">*</button></td>
+                            <td><button value="1/x" class="boton">1/x</button></td>
+                        </tr>
+                		<tr>
+                        	<td><button value="1" class="boton">1</button></td>
+                            <td><button value="2" class="boton">2</button></td>
+                            <td><button value="3" class="boton">3</button></td>
+                            <td><button value="-" class="boton">-</button></td>
+                            <td rowspan="2"><button value="=" class="boton boton-igual">=</button></td>
+                        </tr>
+                        <tr>
+                        	<td colspan="2"><button value="0" class="boton">0</button></td>
+                            <td><button value="." class="boton">.</button></td>
+                            <td><button value="+" class="boton">+</button></td>
+                        </tr>
+                    </table>
+                </div><!--contenedor-tabla-->
+            </div><!--calculadora-->
+        </div>
+        <audio src="tonos/hangouts_message.ogg" id="tono"></audio>
+		<script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1{
+	display:block;
+	text-align:center;
+}
+.calculadora{
+	width:300px;
+	height:400px;
+	border:solid 1px black;
+	margin:0px auto;
+	border-radius:5px;
+	background-image:url(../img/metal-2.jpg);
+	background-size:cover;
+}
+.pantalla{
+	width:85%;
+	height:25%;
+	margin:0px auto;
+	margin-top:20px;
+	background:purple;
+	box-sizing:border-box;
+	border:solid 1px white;
+}
+.pantalla-izq,.pantalla-der{
+	width:10%;
+	height:100%;
+	background:#73B97B;
+	box-sizing:border-box;
+	float:left;
+	color:black;
+	font-family:Pixcelscr;
+	overflow:hidden;
+}
+.pantalla-izq{
+	text-align:center;
+}
+.signo,.memoria{
+	width:100%;
+	height:50%;
+	box-sizing:inherit;
+	padding:5px;
+}
+.signo{
+	font-size:12px;
+}
+.pantalla-der{
+	width:90%;
+}
+.operaciones,.entrada{
+	display:block;
+	width:100%;
+	height:30%;
+	border:none;
+	text-align:right;
+	box-sizing:border-box;
+	padding:10px;
+	overflow:hidden;
+}
+.operaciones{
+	float:right;
+}
+.entrada{
+	padding-top:35px;
+	height:70%;
+	font-size:23px;
+}
+.contenedor-tabla{
+	width:85%;
+	height:63%;
+	margin:0px auto;
+	margin-top:10px;
+	border:solid 1px #ACACAC;
+}
+.contenedor-tabla table{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+}
+.contenedor-tabla table td{
+}
+.boton{
+	display:block;
+	width:100%;
+	height:37px;
+	margin:0px auto;
+	cursor:pointer;
+	font-weight:bold;
+	color: rgb(255, 255, 230);
+	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+	border-radius: 5px;
+	background: rgb(57, 60, 92);
+	background: -moz-linear-gradient(90deg, rgb(57, 60, 92) 74%, rgb(34, 115, 129) 98%);
+	background: -webkit-linear-gradient(90deg, rgb(57, 60, 92) 74%, rgb(34, 115, 129) 98%);
+	background: -o-linear-gradient(90deg, rgb(57, 60, 92) 74%, rgb(34, 115, 129) 98%);
+	background: -ms-linear-gradient(90deg, rgb(57, 60, 92) 74%, rgb(34, 115, 129) 98%);
+	background: linear-gradient(0deg, rgb(57, 60, 92) 74%, rgb(34, 115, 129) 98%);
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+	color:white;
+	border:solid 1px white;
+}
+.boton:active{
+	background: linear-gradient(0deg, rgb(34, 115, 129) 0%, rgb(57, 60, 92) 98%);
+}
+.boton-borrar{
+	color: rgb(255, 255, 230);
+	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+	background: rgb(241, 76, 80);
+	background: -moz-linear-gradient(90deg, rgb(241, 76, 80) 74%, rgb(255, 131, 80) 98%);
+	background: -webkit-linear-gradient(90deg, rgb(241, 76, 80) 74%, rgb(255, 131, 80) 98%);
+	background: -o-linear-gradient(90deg, rgb(241, 76, 80) 74%, rgb(255, 131, 80) 98%);
+	background: -ms-linear-gradient(90deg, rgb(241, 76, 80) 74%, rgb(255, 131, 80) 98%);
+	background: linear-gradient(0deg, rgb(241, 76, 80) 74%, rgb(255, 131, 80) 98%);
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+.boton-borrar:active{
+	background: rgb(241, 76, 80);
+	background: linear-gradient(0deg, rgb(255, 131, 80) 0%, rgb(241, 76, 80) 98%);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+.boton-igual{
+	height:80px;
+}
+.mensaje{
+	font-size:9px;
+}
+.clear{
+	clear:both;
+}
+@font-face{
+	font-family:Pixcelscr;
+	src:url(../fonts/Pixelscr.ttf);
+}
